@@ -71,7 +71,7 @@ app.delete("/repositories/:id", (request, response) => {
 
   repositories.splice(repositorieIndex, 1);
 
-  return response.json(repositories);
+  return response.status(204).send();
 
 });
 
